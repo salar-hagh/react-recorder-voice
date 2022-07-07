@@ -1,19 +1,28 @@
 {
   "name": "react-recorder-voice",
-  "version": "1.0.9",
+  "version": "1.2.1",
   "main": "index.js",
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "description": "",
   "repository": {
     "type": "git",
-    "url": "https://github.com/monatheoctocat/my_package.git"
+    "url": "https://github.com/salar-hagh/react-recorder-voice.git"
   },
-  "keywords": [],
+  "keywords": [
+    "voice",
+    "audio",
+    "recorder",
+    "audio recorder",
+    "voice recorder",
+    "react recorder",
+    "react voice",
+    "react audio"
+  ],
   "bugs": {
-    "url": "https://github.com/monatheoctocat/my_package/issues"
+    "url": "https://github.com/salar-hagh/react-recorder-voice/issues"
   },
-  "homepage": "https://github.com/monatheoctocat/my_package",
+  "homepage": "https://github.com/salar-hagh/react-recorder-voice",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

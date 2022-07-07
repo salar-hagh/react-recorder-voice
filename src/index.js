@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 
 export const useRecorder = () => {
   const [audioURL, setAudioURL] = useState("");
-  const [recordingStatus, setRecordingStatus] = useState("send");
+  const [recordingStatus, setRecordingStatus] = useState("save");
   const [recorder, setRecorder] = useState(null);
-  const [voiceData, setVoiceData] = useState(null);
+  const [audioData, setAudioData] = useState(null);
 
   useEffect(() => {
     // Lazily obtain recorder first time we're recording.
@@ -18,18 +18,18 @@ export const useRecorder = () => {
     // Manage recorder state.
     if (recordingStatus === "recording") {
       recorder.start();
-    } else if (recordingStatus === "send") {
+    } else if (recordingStatus === "save") {
       recorder.stop();
     } else {
       setRecorder(null);
-      setVoiceData(null);
+      setAudioData(null);
       setAudioURL("");
       recorder.stop();
     }
 
     // Obtain the audio when ready.
     const handleData = (e) => {
-      setVoiceData(e.data);
+      setAudioData(e.data);
       setAudioURL(URL.createObjectURL(e.data));
     };
 
@@ -47,8 +47,8 @@ export const useRecorder = () => {
     setRecordingStatus("cancle");
   };
 
-  const sendRecordedVoice = () => {
-    setRecordingStatus("send");
+  const saveRecordedAudio = () => {
+    setRecordingStatus("save");
   };
 
   useEffect(() => {
@@ -74,9 +74,9 @@ export const useRecorder = () => {
     recordingStatus,
     startRecording,
     cancleRecording,
-    sendRecordedVoice,
-    voiceData,
-    timer: timer,
+    saveRecordedAudio,
+    audioData,
+    timer,
   };
 };
 
