@@ -1,3 +1,5 @@
+A React package for recording audio.
+
 ## Installation
 
 ```
