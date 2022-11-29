@@ -42,14 +42,17 @@ function App() {
 export default App;
 ```
 
-| Options / Props   | Description                                                      |
-| ----------------- | ---------------------------------------------------------------- |
-| audioData         | gives you recorded audio data for use or send with API or ...    |
-| timer             | gives you a time for showing to user                             |
-| recordingStatus   | gives you status of recording for example => recording or cancle |
-| cancleRecording   | with this method you can cancel recording                        |
-| saveRecordedAudio | with this method you can save recording                          |
-| startRecording    | with this method you can start recording                         |
+
+| Options / Props   | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| audioURL          | gives you recorded audio URL you can put this URL in src of audio tag |
+| audioData         | gives you recorded audio data for use or send with API or ...         |
+| timer             | gives you a time for showing to user                                  |
+| recordingStatus   | gives you status of recording for example => recording or cancle      |
+| cancleRecording   | with this method you can cancel recording                             |
+| saveRecordedAudio | with this method you can save recording                               |
+| startRecording    | with this method you can start recording                              |
+
 
 ## Contributing
 
