@@ -1,10 +1,14 @@
 {
   "name": "react-recorder-voice",
-  "version": "1.2.6",
-  "main": "index.js",
+  "version": "1.3.3",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "author": "",
   "license": "MIT",
   "description": "",
+  "files": [
+    "/dist"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/salar-hagh/react-recorder-voice.git"
@@ -27,6 +31,10 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
+    "@types/react": "^18.0.25",
     "react": "^18.2.0"
+  },
+  "dependencies": {
+    "typescript": "^4.9.3"
   }
 }
