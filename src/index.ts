@@ -39,9 +39,9 @@ export const useRecorder = () => {
   const startRecording = () => {
     setRecordingStatus("recording");
   };
-
-  const cancleRecording = () => {
-    setRecordingStatus("cancle");
+  
+  const cancelRecording = () => {
+    setRecordingStatus("cancel");
   };
 
   const saveRecordedAudio = () => {
@@ -70,7 +70,7 @@ export const useRecorder = () => {
     audioURL,
     recordingStatus,
     startRecording,
-    cancleRecording,
+    cancelRecording,
     saveRecordedAudio,
     audioData,
     timer,

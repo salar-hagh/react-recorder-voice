@@ -23,7 +23,7 @@ function App() {
     audioData,
     timer,
     recordingStatus,
-    cancleRecording,
+    cancelRecording,
     saveRecordedAudio,
     startRecording,
   } = useRecorder();
@@ -31,7 +31,7 @@ function App() {
   return (
     <div>
       <button onClick={startRecording}>Start</button>
-      <button onClick={cancleRecording}>Cancle</button>
+      <button onClick={cancelRecording}>Cancel</button>
       <button onClick={saveRecordedAudio}>Stop and Save</button>
       <audio controls src={audioURL}></audio>
       <h1>{timer}</h1>
@@ -48,8 +48,8 @@ export default App;
 | audioURL          | gives you recorded audio URL you can put this URL in src of audio tag |
 | audioData         | gives you recorded audio data for use or send with API or ...         |
 | timer             | gives you a time for showing to user                                  |
-| recordingStatus   | gives you status of recording for example => recording or cancle      |
-| cancleRecording   | with this method you can cancel recording                             |
+| recordingStatus   | gives you status of recording for example => recording or cancel      |
+| cancelRecording   | with this method you can cancel recording                             |
 | saveRecordedAudio | with this method you can save recording                               |
 | startRecording    | with this method you can start recording                              |
 
